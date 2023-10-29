@@ -1,0 +1,322 @@
+.cart-cards_describe,
+.cart-cards_price,
+.cart-cards_counter,
+.cart-cards_total,
+.cart-card-description{
+display: flex;
+height: 200px;
+align-items: center;
+justify-content: center;
+}
+
+.cart-footer{
+   display: flex;
+   justify-content: space-between;
+   padding: 0 30px;
+}
+
+.cart-footer-form{
+    width: 350px;
+    height: 100px;
+    border-radius: 5px;
+    background-color: rgb(225, 220, 220);
+}
+.if-cart-emtpy{
+  width: 100%;
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.cart-cards-container{
+ display: grid; 
+ margin: 20px;
+ align-items: center;
+ justify-items: center;
+ grid-template-columns: repeat(5,1fr);
+ grid-template-rows: repeat(4,1fr);
+ grid-template-areas: 
+                               
+                      "card  card price counter total"
+                      "card  card price counter total"
+                      "card  card price counter total"
+                      "card  card price counter total";
+}
+
+
+
+/* cart elements */
+
+.cart-cards_element{
+    grid-area: card;
+    width:  600px;
+    height: 100%;
+    display: flex;
+   
+    /* background-color: aqua; */
+    
+}
+
+.cart-cards_price{
+    grid-area: price;
+    width: 100%;
+    /* background-color: rgb(179, 201, 201); */
+}
+.cart-cards_counter{
+   
+    grid-area: counter;
+    width: 100%;
+    /* background-color: rgb(39, 142, 142); */
+}
+.counter-style{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: solid 1px;
+    width: 150px;
+    border-radius: 5px;
+    height: 32px;
+}
+.cart-cards_total{
+    grid-area: total;
+    width: 100%;
+    /* background-color: rgb(27, 182, 86); */
+}
+.cart-card-description{
+   
+    display: flex;
+    flex-direction: column;
+ 
+    grid-area: desc;
+    width: 100%;
+
+    /* background-color: rgb(225, 58, 12); */
+    font-size: large;
+}
+
+.cart-card-picture{
+    width: 300px;
+    height: 100%;
+}
+
+
+
+
+@media (max-width: 1000px) {
+
+    h5{
+        font-size:15px !important; 
+        line-height:20px !important
+    }
+    h4{
+        font-size:20px !important; 
+        line-height:25px !important
+    }
+
+    .cart-cards_describe,
+    .cart-cards_price,
+    .cart-cards_counter,
+    .cart-cards_total,
+    .cart-card-description{
+    display: flex;
+    height: 170px;
+    align-items: center;
+    justify-content: center;
+    }
+
+    .cart-cards_element{
+        grid-area: card;
+        width:  350px;
+        height: 100%;
+        display: flex;
+    
+        /* background-color: aqua; */
+        
+    }
+  
+
+    .cart-cards-container{
+        display: grid; 
+        margin: 20px;
+        align-items: center;
+        justify-items: center;
+        grid-template-columns: repeat(5,1fr);
+        grid-template-rows: repeat(4,1fr);
+        grid-template-areas: 
+                                      
+                             "card  card price counter total"
+                             "card  card price counter total"
+                             "card  card price counter total"
+                             "card  card price counter total";
+       }
+  
+   
+}
+
+
+
+    
+
+@media (max-width: 768px) {
+
+    h5{
+        font-size:15px !important; 
+        line-height:20px !important
+    }
+    h4{
+        font-size:20px !important; 
+        line-height:25px !important
+    }
+
+    .cart-cards_describe,
+    .cart-cards_price,
+    .cart-cards_counter,
+    .cart-cards_total,
+    .cart-card-description{
+    display: flex;
+    height: 140px;
+    align-items: center;
+    justify-content: center;
+    }
+
+    .cart-cards_element{
+        grid-area: card;
+        width:  270px;
+        height: 100%;
+        display: flex;
+    
+        /* background-color: aqua; */
+        
+    }
+  
+
+    .cart-cards-container{
+        display: grid; 
+        margin: 20px;
+        align-items: center;
+        justify-items: center;
+        grid-template-columns: repeat(5,1fr);
+        grid-template-rows: repeat(4,1fr);
+        grid-template-areas: 
+                                      
+                             "card  card price counter total"
+                             "card  card price counter total"
+                             "card  card price counter total"
+                             "card  card price counter total";
+       }
+  
+   
+}
+
+@media (max-width: 600px) {
+
+     h5{
+        font-size:13px !important; 
+        line-height:20px !important
+    }
+
+    h4{
+        font-size:17px !important; 
+        line-height:25px !important
+    }
+
+    .cart-card-description{
+        align-items: start;
+       }
+
+    .cart-card-picture{
+        width: 200px;
+        height: 100%;
+    }
+
+    .cart-cards_describe,
+    .cart-cards_price,
+    .cart-cards_counter,
+    .cart-cards_total,
+    .cart-card-description{
+     height: 40px;
+   
+    }
+
+    .cart-cards_element{
+        grid-area: card;
+        width:  100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cart-cards-container{
+        display: grid; 
+        margin: 20px;
+        align-items: center;
+        justify-items: center;
+        grid-template-columns: repeat(5,1fr);
+        grid-template-rows: repeat(4,1fr);
+        grid-template-areas: 
+                                      
+                             "card  card card card card"                       
+                             "card  card card card card"
+                             "card  card card card card"               
+                             "price counter counter counter total";
+       }
+}
+
+@media (max-width: 400px) {
+
+    h5{
+       font-size:13px !important; 
+       line-height:20px !important
+   }
+
+   h4{
+       font-size:17px !important; 
+       line-height:25px !important
+   }
+
+   .cart-card-description{
+    align-items: start;
+   }
+
+   .cart-card-picture{
+       width: 150px;
+       height: 100%;
+   }
+
+   .cart-cards_describe,
+   .cart-cards_price,
+   .cart-cards_counter,
+   .cart-cards_total,
+   .cart-card-description{
+    height: 40px;
+  
+   }
+
+   .cart-cards_element{
+       grid-area: card;
+       width:  100%;
+       height: 100px;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+   }
+
+   .cart-cards-container{
+       display: grid; 
+       margin: 20px;
+       align-items: center;
+       justify-items: center;
+       grid-template-columns: repeat(5,1fr);
+       grid-template-rows: repeat(4,1fr);
+       grid-template-areas: 
+                                     
+                            "card  card card card card"                       
+                            "card  card card card card"
+                            "card  card card card card"               
+                            "price counter counter counter total";
+      }
+}
