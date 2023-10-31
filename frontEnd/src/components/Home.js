@@ -13,7 +13,7 @@ const Home = () => {
             
             {isLoading && <p>Please wait...</p>}
             
-            {error     && <p>...Something wrong. Please turn on API SERVER!</p>}
+            {error     && <p>...Something wrong. Please turn on API SERVER! (from backeEnd folder by 'node index.js' command)</p>}
 
             {data      &&  data?.map((item) => (   
                     <ProductsCard key={item.id} item={item}/>

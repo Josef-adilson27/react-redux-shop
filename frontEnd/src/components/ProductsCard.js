@@ -7,7 +7,7 @@ import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import { addToCart } from '../redux/CartSlice';
 import { useDispatch} from 'react-redux';
-
+import {getTotals} from '../redux/CartSlice'
 
  
 const ProductsCard = ({item}) => {
@@ -16,6 +16,7 @@ const ProductsCard = ({item}) => {
   
   const addItem = (product)=>{
     dispatch(addToCart(product))
+    dispatch(getTotals()) 
   }
   
   return (

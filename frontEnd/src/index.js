@@ -6,8 +6,7 @@ import { Provider } from 'react-redux';
 import {store} from './redux/Store';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import {grey,red} from '@mui/material/colors';
-import {ApiProvider } from '@reduxjs/toolkit/dist/query/react';
-import { productsApi } from './Api/ProductsApi';
+
 
 const theme = createTheme({
   palette: {

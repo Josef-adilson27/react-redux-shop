@@ -35,7 +35,7 @@ const initialState ={
         {
             state.cartItems.push({...action.payload,cartQuantity:1})
             // сообщение при первом добавлении
-            toast.info(` ${action.payload.name} Изящно добавлен в корзину`,{
+            toast.info(` ${action.payload.name} добавлен в корзину`,{
                 position:'bottom-left'
             })
         }
@@ -49,7 +49,7 @@ const initialState ={
 
             localStorage.setItem('cartItems',JSON.stringify(state.cartItems))
 
-            toast.error(`${action.payload.name} Жестоким образом удален с корзины`,{
+            toast.error(`${action.payload.name}удален с корзины`,{
                 position:'bottom-left'
             })     
         },
